@@ -2,7 +2,7 @@
 
 <section>
     <figure>
-        <img src="photo_2026-04-17_11-21-41.jpg" alt="Group Photo" width="400" height="300">
+        <img src="images/photo_2026-04-17_11-21-41.jpg" alt="Group Photo" width="400" height="300">
         <figcaption>Group Photo</figcaption>
     </figure>
 
