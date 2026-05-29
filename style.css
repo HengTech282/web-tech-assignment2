@@ -145,69 +145,6 @@ footer a:hover {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 768px) {
-    figure {
-        float: none;
-        margin: 0 auto 20px auto;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px auto;
-        width: 220px;
-    }
-
-    section {
-        width: 95%;
-    }
-
-    table, th, td {
-        font-size: 14px;
-    }
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: #f5f5f5;
-}
-
-/* HEADER */
-header {
-    text-align: center;
-    padding: 30px;
-    background-color: #222;
-    border-bottom: 3px solid #f0c040;
-}
-
-header h1 {
-    color: #f0c040;
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    display: inline-block;
-    margin: 5px;
-    padding: 10px 15px;
-    text-decoration: none;
-    background-color: #f0c040;
-    color: black;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    background-color: #ffd95e;
-}
-
 /* FORM SECTION */
 #main {
     display: flex;
@@ -275,30 +212,9 @@ input[type="submit"]:hover {
     background-color: #ffd95e;
 }
 
-/* FOOTER */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    margin-top: 30px;
-}
-
-footer a {
-    color: #f0c040;
-}
-
 html, body {
     height: 100%;
     margin: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: white;
-    color: black;
-    display: flex;
-    flex-direction: column;
-    position: relative;
 }
 
 header {
@@ -341,9 +257,7 @@ header {
     left: 30px;
     width: 5px;
     height: 100vh;
-    /*background-color: black;*/
 }
-
 
 .description {
     position: absolute;
@@ -384,8 +298,7 @@ footer {
     position: absolute;
     bottom: 0;
     right: 20px;
-    padding: 20px
-    
+    padding: 20px;
 }
 
 .footer-table {
@@ -430,3 +343,225 @@ footer {
     background-color: #E65C00;
 }
 
+@media screen and (max-width: 768px) {
+    figure {
+        float: none;
+        margin: 0 auto 20px auto;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px auto;
+        width: 220px;
+    }
+
+    section {
+        width: 95%;
+    }
+
+    table, th, td {
+        font-size: 14px;
+    }
+}
+
+
+/*                      1. Index Page                    */
+.index header {
+    position: relative;
+    min-height: 500px;
+    background-color: white;
+    border-top: none;
+    border-bottom: none;
+    text-align: left;
+    padding: 0;
+}
+
+.index .title {
+    position: absolute;
+    top: 15px;
+    left: 90px;
+    margin: 0;
+    font-size: 70px;
+    font-weight: bold;
+    font-family: 'Arial Black', Arial, sans-serif;
+    background: linear-gradient(90deg, #7B3FE4, #D946A8, #F97316, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.index .slogan {
+    position: absolute;
+    top: 110px;
+    left: 190px;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: linear-gradient(90deg, #7B3FE4, #D946A8, #F97316);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.index .description {
+    position: absolute;
+    top: 300px;
+    left: 100px;
+    font-family: 'Trebuchet MS', sans-serif;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    max-width: 650px;
+    margin: 0;
+    line-height: 1.5;
+    color: #0F1535;
+}
+
+.index .logo {
+    position: absolute;
+    top: 75px;
+    right: 40px;
+    width: 700px;
+}
+
+#borderLine1 {
+    position: absolute;
+    top: 0;
+    left: 35px;
+    width: 10px;
+    height: 100vh;
+    background: linear-gradient(180deg, #7B3FE4, #D946A8, #F97316, #EAB308, #06B6D4);
+}
+
+#borderLine2 {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    width: 5px;
+    height: 100vh;
+    background: linear-gradient(180deg, #7B3FE4, #D946A8, #F97316, #EAB308, #06B6D4);
+}
+
+#borderLine2::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    width: 50px;
+    height: 100vh;
+    background: linear-gradient(
+        180deg,
+        #7B3FE4,
+        #D946A8,
+        #F97316,
+        #06B6D4
+    );
+    filter: blur(25px);
+    opacity: 0.35;
+}
+
+.index nav {
+    position: absolute;
+    top: 60px;
+    right: 75px;
+    z-index: 1000;
+    margin: 0;
+}
+
+.index nav a {
+    color: #0F1535;
+    text-decoration: underline;
+    background: none;
+    margin-left: 15px;
+    margin-right: 15px;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 0;
+    border-radius: 0;
+}
+
+.index nav a:hover {
+    background: linear-gradient(90deg, #7B3FE4, #D946A8, #F97316, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.index footer {
+    position: fixed;
+    bottom: 5px;
+    left: 350px;
+    background-color: #ffffff;
+    border-top: none;
+    color: #111;
+    text-align: left;
+    padding: 0px 0;
+}
+
+.index .footer-table {
+    display: inline-table;
+    border-collapse: collapse;
+    border: none;
+    width: 100%;
+}
+
+.index .footer-table tr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.index .footer-table td {
+    padding: 0px 10px;
+    border: none;
+    white-space: nowrap;
+}
+
+.index .footer-table a {
+    color: #111;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.index .footer-table a:hover {
+    background: linear-gradient(90deg, #7B3FE4, #D946A8, #F97316, #06B6D4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-decoration: none;
+}
+
+.index .search-box {
+    position: fixed;
+    bottom: 25px;
+    left: 75px;
+}
+
+.index .search-box input {
+    padding: 8px;
+    font-size: 14px;
+    width: auto;
+    border: 2px solid #7B3FE4;
+    background-color: #ffffff;
+    color: #0F1535;
+    border-radius: 5px;
+}
+
+.index .search-box button {
+    padding: 8px 12px;
+    font-size: 14px;
+    background: linear-gradient(90deg, #7B3FE4, #D946A8, #F97316, #06B6D4);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.index .search-box button:hover {
+    background: linear-gradient(90deg, #06B6D4, #F97316, #D946A8, #7B3FE4);
+}
